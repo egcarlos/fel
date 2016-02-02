@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="pe.facturacion.fel_queries_war_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>pe.facturacion.fel.queries.entities.Document</class>
+    <class>pe.facturacion.fel.queries.entities.DocumentData</class>
+    <class>pe.facturacion.fel.queries.entities.DocumentResponse</class>
+    <class>pe.facturacion.fel.queries.entities.DocumentAuxiliar</class>
+    <class>pe.facturacion.fel.queries.entities.DocumentLegend</class>
+    <class>pe.facturacion.fel.queries.entities.DocumentAttribute</class>
+    <class>pe.facturacion.fel.queries.entities.ItemAuxiliar</class>
+    <class>pe.facturacion.fel.queries.entities.ItemAttribute</class>
+    <class>pe.facturacion.fel.queries.entities.Item</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://einvoice.cx7ggkres4rk.us-west-2.rds.amazonaws.com;databaseName=einvoice-hm"/>
+      <property name="javax.persistence.jdbc.user" value="einvoice-hm"/>
+      <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="javax.persistence.jdbc.password" value="einvoice-hm"/>
+    </properties>
+  </persistence-unit>
+</persistence>
